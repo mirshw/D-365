@@ -251,3 +251,52 @@ form button:hover {
     cursor: pointer;
     padding: 5px;
 }
+
+
+/* 기존 CSS 코드 유지 */
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 1em 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container, section, .timeline .event, .comment-item, .gallery-item, .message-gallery-item {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* 버튼을 모바일에서 화면 너비에 맞추기 */
+    form button {
+        width: 100%;
+    }
+    
+    /* 이미지가 화면 너비에 맞게 조정되도록 설정 */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* 텍스트 폼과 버튼 크기 조정 */
+    form input, form textarea, .edit-comment-form input, .edit-comment-form textarea {
+        font-size: 1em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
