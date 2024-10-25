@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕷️❤‍🔥🦇</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🕷️❤‍🔥🦇</h1>
+        <p>서로가 서로에게 유일무이한 불멸과 필멸이 함께한 1년을 축하하며,</p>
+        <p>앞으로 함께 써내려갈 이야기를 기대하며.</p>
+    </header>
+
+    <section id="our-story">
+        <h2>📖 Recording of 365 days</h2>
+        <div class="timeline" id="timeline">
+            <!-- Existing events will be loaded here -->
+        </div>
+        
+        <form id="story-form">
+            <input type="text" id="event-title" placeholder="Moment Title" required>
+            <textarea id="event-description" placeholder="Moment Description" required></textarea>
+            <button type="submit">Add Moment</button>
+        </form>
+    </section>
+
+    <section id="photo-gallery">
+        <h2>📸 Photo of Our Story</h2>
+        <div class="gallery" id="gallery">
+            <!-- Uploaded photos will be displayed here -->
+        </div>
+        <form id="upload-form">
+            <input type="file" id="photo-upload" accept="image/*" required>
+            <input type="text" id="photo-title" placeholder="Enter photo title" required>
+            <button type="submit">Upload Photo</button>
+        </form>       
+    </section>
+
+    <section id="messages-to-each-other">
+        <h2>💌 Messages to Each Other</h2>
+    
+        <div class="message-section">
+            <h3>From. Jim Moriarty</h3>
+            <form id="message-upload-form-j">
+                <input type="file" id="message-photo-upload-j" accept="image/*" required>
+                <input type="text" id="message-photo-title-j" placeholder="Enter message title" required>
+                <button type="submit">Upload Message</button>
+            </form>
+            <div class="message-gallery" id="jim-message-gallery">
+                <!-- Jim Moriarty의 메시지들이 여기 추가됩니다 -->
+            </div>
+        </div>
+    
+        <div class="message-section">
+            <h3>From. Louis de Pointe du Lac</h3>
+            <form id="message-upload-form-l">
+                <input type="file" id="message-photo-upload-l" accept="image/*" required>
+                <input type="text" id="message-photo-title-l" placeholder="Enter message title" required>
+                <button type="submit">Upload Message</button>
+            </form>
+            <div class="message-gallery" id="other-message-gallery">
+                <!-- Louis de Pointe du Lac의 메시지들이 여기 추가됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>P.S. 그래서, 우리 언제 결혼해?</p>
+    </footer>
+
+    <script src="our story.js"></script>
+    <script src="photo.js"></script>
+    <script src="message.js"></script>
+</body>
+</html>
