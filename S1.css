@@ -183,7 +183,7 @@ form button {
     border-radius: 5px;
     cursor: pointer;
     align-self: flex-end;
-    width: 100%;
+    width: auto;
 }
 
 form button:hover {
@@ -268,6 +268,8 @@ form button:hover {
         word-wrap: break-word;
         word-break: break-word;
         line-height: 1.4em;
+        white-space: normal;
+        overflow-wrap: break-word;
     }
 
     .container, section, .timeline .event, .comment-item, .gallery-item, .message-gallery-item {
